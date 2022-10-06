@@ -1,0 +1,44 @@
+.card {
+  padding: 8px 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  max-height: 75px;
+  color: rgb(38, 38, 38);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card:hover {
+  background-color: rgb(242, 242, 242);
+  cursor: pointer;
+}
+
+.card .stock-actions {
+  display: none;
+}
+
+.card:hover .stock-actions {
+  display: block;
+}
+
+.stock-name {
+  word-break: break-word;
+  text-transform: uppercase;
+  line-height: 1.33;
+}
+
+.stock-exchange-name {
+  background-color: rgba(38, 38, 38, 0.1);
+  padding: 2px;
+  border-radius: 2px;
+  width: 50px;
+}
+
+.stock-value-change {
+  color: rgb(20, 133, 100);
+}
+
+.stock-value-change.negative {
+  color: red;
+}
